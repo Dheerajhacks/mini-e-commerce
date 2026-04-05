@@ -1,4 +1,3 @@
-import { quantity } from "echarts/types/src/util/number.js";
 import { createContext, useState, useEffect, useContext, Children } from "react";
 
 const CartContext = createContext();
@@ -44,7 +43,7 @@ export const CartProvider = ({children}) => {
 
     return (
         <CartContext.Provider 
-        value={{Cart, addToCart, removeFromCart, updateQuantity, clearCart, cartTotal, cartCount}}
+        value={{cart, addToCart, removeFromCart, updateQuantity, clearCart, cartTotal, cartCount}}
         >
             {children}
         </CartContext.Provider>

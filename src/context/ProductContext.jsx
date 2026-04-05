@@ -2,9 +2,9 @@ import { createContext, useState, useEffect, useContext } from "react";
 import axiosfrom  from "axios";
 import toast from "react-hot-toast";
 
-const ProductContxext = createContext();
+const ProductContext = createContext();
 
-export const useProducts = () => useContext(ProductContxext);
+export const useProducts = () => useContext(ProductContext);
 
 export const ProductProvider = ({children}) => {
     const [products, setProducts] = useState([]);
